@@ -1,0 +1,4 @@
+<%= form_for :throw, url: throw_path do |form| %>
+    <%= form.select :sign, ThrowType.list %>
+    <%= form.submit "Throw"  %>
+<% end  %>
