@@ -20,7 +20,8 @@ module RockPaperScissors
       g.fixture_replacement :factory_bot, dir: "spec/factories"
     end
 
-    config.autoload_paths += ["#{config.root}/app/enumerations/"]
+    config.autoload_paths += ["#{config.root}/app/enumerations/",
+                              "#{config.root}/app/services/"]
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
